@@ -1,0 +1,25 @@
+{
+    "id": 5904109,
+    "name": "Platinum Adventure",
+    "author": "Jerry4",
+    "creators": ["Jerry4"],
+    "verifier": "disclash",
+    "verification": "https://www.youtube.com/watch?v=3g26MozCcFc",
+    "percentToQualify": "56",
+    "password": "000000",
+    "records": [
+        {
+            "user": "TriaPlaysGames",
+            "link": "https://pastebin.com/3ZeEkE77",
+            "percent": 100,
+            "hz": 60
+        },
+        {
+            "user": "thetntteam",
+            "link": "https://medal.tv/games/geometry-dash/clips/nT5VyJbV5dsNWaKew?invite=cr-MSw0RlYsNTcwNDMwMjUz",
+            "percent": 70,
+            "hz": 75
+        }
+    ]
+}
+ 
