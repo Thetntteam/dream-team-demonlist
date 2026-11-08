@@ -1,0 +1,95 @@
+
+/* About Page */
+
+body {
+    background: #f3f7fc;
+    font-family: Arial, sans-serif;
+    color: #172b4d;
+    margin: 0;
+}
+
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.about-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    padding: 65px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(30, 80, 140, 0.08);
+}
+
+.about-label {
+    color: #3478d4;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-card h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #172b4d;
+}
+
+.about-card h1 span {
+    color: #3478d4;
+}
+
+.blue-line {
+    width: 55px;
+    height: 4px;
+    background: #3478d4;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #60738e;
+    white-space: pre-line;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 24px;
+    background: #3478d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.back-button:hover {
+    background: #225eae;
+}
+
+footer {
+    margin-top: 35px;
+    color: #91a1b6;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .about-card {
+        padding: 35px 25px;
+    }
+
+    .about-card h1 {
+        font-size: 36px;
+    }
+}
