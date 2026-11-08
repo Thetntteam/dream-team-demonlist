@@ -100,7 +100,7 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps). Levels must be beat with a orange (main color 10 preferred) and white coloring (secondary color 12 preferred), cube 98 and ship 88
                     </p>
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
