@@ -106,15 +106,24 @@ export async function fetchLeaderboard() {
     });
 
     // Wrap in extra Object containing the user and total score
+    const levelCount = list.filter(([level, err], rank) => !err && rank < 150).length;
     const res = Object.entries(scoreMap).map(([user, scores]) => {
         const { verified, completed, progressed } = scores;
         const total = [verified, completed, progressed]
             .flat()
             .reduce((prev, cur) => prev + cur.score, 0);
 
+        const conqueredRanks = new Set([
+            ...verified.map((entry) => entry.rank),
+            ...completed.map((entry) => entry.rank),
+        ]);
+
         return {
             user,
             total: round(total),
+            conquered: levelCount > 0 && conqueredRanks.size === levelCount,
+            conqueredCount: conqueredRanks.size,
+            listCount: levelCount,
             ...scores,
         };
     });

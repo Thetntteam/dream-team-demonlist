@@ -33,9 +33,12 @@ export default {
                             <td class="total">
                                 <p class="type-label-lg">{{ localize(ientry.total) }}</p>
                             </td>
-                            <td class="user" :class="{ 'active': selected == i }">
+                            <td class="user" :class="{ 'active': selected == i, 'conquered': ientry.conquered }">
                                 <button @click="selected = i">
-                                    <span class="type-label-lg">{{ ientry.user }}</span>
+                                    <span class="type-label-lg">
+                                        {{ ientry.user }}
+                                        <span v-if="ientry.conquered" class="conquered-badge" title="Conquered the entire list">Conquered</span>
+                                    </span>
                                 </button>
                             </td>
                         </tr>
@@ -43,7 +46,12 @@ export default {
                 </div>
                 <div class="player-container">
                     <div class="player">
-                        <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
+                        <h1 :class="{ conquered: entry.conquered }">
+                            #{{ selected + 1 }} {{ entry.user }}
+                        </h1>
+                        <p v-if="entry.conquered" class="conquered-status" title="Verified or completed all levels">
+                            <span aria-hidden="true">◆</span> List Conquered · {{ entry.conqueredCount }} / {{ entry.listCount }} levels
+                        </p>
                         <h3>{{ entry.total }}</h3>
                         <h2 v-if="entry.verified.length > 0">Verified ({{ entry.verified.length}})</h2>
                         <table class="table">
