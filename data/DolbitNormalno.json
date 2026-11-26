@@ -1,0 +1,18 @@
+{
+    "id": 63405062,
+    "name": "Dolbit Normalno",
+    "author": "MaFFaKa",
+    "creators": ["MaFFaKa"],
+    "verifier": "thetntteam",
+    "verification": "https://www.youtube.com/watch?v=eYWWmBkKwhI",
+    "percentToQualify": "56",
+    "password": "001337",
+    "records": [
+        {
+            "user": "TriaPlaysGames",
+            "link": "https://medal.tv/games/geometry-dash/clips/o0wh7pwX6apwTThsO",
+            "percent": 100,
+            "hz": 60
+        }
+    ]
+}
